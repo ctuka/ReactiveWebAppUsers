@@ -20,7 +20,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Expose port 8080 for Spring Boot app
-EXPOSE 8080
+EXPOSE 8083
 
 # Environment variable (optional, for MongoDB connection)
 # ENV SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/reactive_users_db
