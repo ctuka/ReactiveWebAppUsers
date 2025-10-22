@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: reactive-webapp
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/reactive_users_db
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
