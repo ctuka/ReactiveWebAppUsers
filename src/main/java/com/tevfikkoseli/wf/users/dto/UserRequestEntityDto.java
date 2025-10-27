@@ -11,8 +11,8 @@ public class UserRequestEntityDto {
 
     private String password;
 
-    public UserRequestEntityDto(String fistName, String lastName, String email, String password) {
-        this.firstName = fistName;
+    public UserRequestEntityDto(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
@@ -22,8 +22,8 @@ public class UserRequestEntityDto {
         return firstName;
     }
 
-    public void setFirstName(String fistName) {
-        this.firstName = fistName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {

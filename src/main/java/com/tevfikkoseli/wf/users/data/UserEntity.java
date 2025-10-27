@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import javax.annotation.processing.Generated;
+
 //import java.util.UUID;
 
 @Document(collection = "users")
@@ -46,8 +48,8 @@ public class UserEntity {
         return firstName;
     }
 
-    public void setFirstName(String fistName) {
-        this.firstName = fistName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {

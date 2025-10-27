@@ -12,9 +12,9 @@ public class UserResponseEntityDto {
     private String lastName;
 
 
-    public UserResponseEntityDto(String id, String fistName, String lastName) {
+    public UserResponseEntityDto(String id, String firstName, String lastName) {
         this.id = id;
-        this.firstName = fistName;
+        this.firstName = firstName;
         this.lastName = lastName;
     }
 
@@ -26,12 +26,12 @@ public class UserResponseEntityDto {
         this.id = id;
     }
 
-    public String getFistName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFistName(String fistName) {
-        this.firstName = fistName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
